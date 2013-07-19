@@ -1,0 +1,20 @@
+class ProfileController < ApplicationController
+  def index
+   @user = User.find(current_user.id)
+  end
+
+  def edit
+   @user = User.find(current_user.id)
+  end
+
+def update
+   @user = User.find(current_user.id)
+ 
+  if @user.update(params[:uset].permit(:password,  :password_confirmation))
+    redirect_to @profile
+  else
+    render 'edit'
+  end
+ end
+
+end

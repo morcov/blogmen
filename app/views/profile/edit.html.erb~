@@ -1,0 +1,22 @@
+<h1>Edit password</h1>
+
+<%= form_for @user do |f| %>
+  
+  <div>
+   <%= f.label(:passwords, "Password") %>
+   <%= f.password_field :passwords %>
+  </div>
+  <div>
+   <%= f.label(:password, "New Password") %>
+   <%= f.password_field :password %>
+  </div>
+<div>
+   <%= f.label(:password_confirmation, "New Password Confirmation") %>
+   <%= f.password_field :password_confirmation %>
+  </div>
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

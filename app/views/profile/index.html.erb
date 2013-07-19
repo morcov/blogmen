@@ -1,0 +1,6 @@
+<h2>Profile <i><%= @user.login %></i></h2>
+<p>Counter of posts: <%= @user.get_count_posts %></p>
+<p>Counter of comments: <%= @user.get_count_comments %></p>
+<br>
+<p><%= link_to 'Edit password', profile_edit_path %></p>
+

@@ -1,0 +1,5 @@
+<p>
+    <b><%= comment.get_parent_name %>:</b>
+    <%= comment.body %>
+  </p>
+
